@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/settings" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.appmysite.baselibrary.titlebar.AMSTitleBar android:id="@id/top_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_push_notifications" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="30.0dip" android:layout_marginStart="14.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout_push_notifications1" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:gravity="center" android:id="@id/push_notifications" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/push_notifications" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="right" android:orientation="vertical" android:id="@id/layout_push_notifications2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.SwitchCompat android:id="@id/notifications_switch" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/layout_multisite" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" android:layout_marginStart="14.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_multisite1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:id="@id/txt_site_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/merge_apps" />
+            <TextView android:textSize="13.0dip" android:textColor="#ffa1a1a1" android:id="@id/txt_site" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="right|center" android:orientation="vertical" android:id="@id/layout_multisite2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:gravity="end" android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="13.0dip" android:src="@drawable/ic_arrow_next" android:textAlignment="viewEnd" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/layout_language" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" android:layout_marginStart="14.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_language1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:id="@id/txt_language_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/language" />
+            <TextView android:textSize="13.0dip" android:textColor="#ffa1a1a1" android:id="@id/txt_language" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="English" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="right|center" android:orientation="vertical" android:id="@id/layout_language2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:gravity="end" android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="13.0dip" android:src="@drawable/ic_arrow_next" android:textAlignment="viewEnd" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_terms" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" android:layout_marginStart="14.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:id="@id/txt_terms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/terms_and_conditions_header" />
+        <LinearLayout android:layout_gravity="right|center" android:orientation="vertical" android:id="@id/layout_terms2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="13.0dip" android:src="@drawable/ic_arrow_next" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/layout_chat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:layout_marginStart="14.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:id="@id/txt_chat" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/chat_with_us" android:layout_weight="1.0" android:paddingEnd="50.0dip" />
+        <LinearLayout android:layout_gravity="right|center" android:orientation="vertical" android:id="@id/layout_chat2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.2">
+            <ImageView android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="13.0dip" android:src="@drawable/ic_arrow_next" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/layout_delete_account" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginStart="14.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:id="@id/txt_del_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Delete Account" />
+    </LinearLayout>
+</LinearLayout>

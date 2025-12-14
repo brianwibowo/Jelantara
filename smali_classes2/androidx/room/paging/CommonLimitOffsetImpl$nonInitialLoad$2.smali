@@ -1,0 +1,253 @@
+.class final Landroidx/room/paging/CommonLimitOffsetImpl$nonInitialLoad$2;
+.super LT0/g;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/room/paging/CommonLimitOffsetImpl;->nonInitialLoad(Landroidx/paging/PagingSource$LoadParams;ILkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "LT0/g;",
+        "Lkotlin/jvm/functions/Function2<",
+        "Lkotlinx/coroutines/CoroutineScope;",
+        "Lkotlin/coroutines/Continuation<",
+        "-",
+        "LM0/r;",
+        ">;",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
+    }
+    d2 = {
+        "Lkotlinx/coroutines/CoroutineScope;",
+        "LM0/r;",
+        "<anonymous>",
+        "(Lkotlinx/coroutines/CoroutineScope;)V"
+    }
+    k = 0x3
+    mv = {
+        0x2,
+        0x0,
+        0x0
+    }
+.end annotation
+
+.annotation runtime Lkotlin/coroutines/jvm/internal/DebugMetadata;
+    c = "androidx.room.paging.CommonLimitOffsetImpl$nonInitialLoad$2"
+    f = "LimitOffsetPagingSource.kt"
+    l = {
+        0x94
+    }
+    m = "invokeSuspend"
+.end annotation
+
+
+# instance fields
+.field label:I
+
+.field final synthetic this$0:Landroidx/room/paging/CommonLimitOffsetImpl;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/room/paging/CommonLimitOffsetImpl<",
+            "TValue;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Landroidx/room/paging/CommonLimitOffsetImpl;Lkotlin/coroutines/Continuation;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/room/paging/CommonLimitOffsetImpl<",
+            "TValue;>;",
+            "Lkotlin/coroutines/Continuation<",
+            "-",
+            "Landroidx/room/paging/CommonLimitOffsetImpl$nonInitialLoad$2;",
+            ">;)V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Landroidx/room/paging/CommonLimitOffsetImpl$nonInitialLoad$2;->this$0:Landroidx/room/paging/CommonLimitOffsetImpl;
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1, p2}, LT0/g;-><init>(ILkotlin/coroutines/Continuation;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Lkotlin/coroutines/Continuation<",
+            "*>;)",
+            "Lkotlin/coroutines/Continuation<",
+            "LM0/r;",
+            ">;"
+        }
+    .end annotation
+
+    new-instance p1, Landroidx/room/paging/CommonLimitOffsetImpl$nonInitialLoad$2;
+
+    iget-object v0, p0, Landroidx/room/paging/CommonLimitOffsetImpl$nonInitialLoad$2;->this$0:Landroidx/room/paging/CommonLimitOffsetImpl;
+
+    invoke-direct {p1, v0, p2}, Landroidx/room/paging/CommonLimitOffsetImpl$nonInitialLoad$2;-><init>(Landroidx/room/paging/CommonLimitOffsetImpl;Lkotlin/coroutines/Continuation;)V
+
+    return-object p1
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Lkotlinx/coroutines/CoroutineScope;
+
+    check-cast p2, Lkotlin/coroutines/Continuation;
+
+    invoke-virtual {p0, p1, p2}, Landroidx/room/paging/CommonLimitOffsetImpl$nonInitialLoad$2;->invoke(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invoke(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlinx/coroutines/CoroutineScope;",
+            "Lkotlin/coroutines/Continuation<",
+            "-",
+            "LM0/r;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    .line 2
+    invoke-virtual {p0, p1, p2}, Landroidx/room/paging/CommonLimitOffsetImpl$nonInitialLoad$2;->create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+
+    move-result-object p1
+
+    check-cast p1, Landroidx/room/paging/CommonLimitOffsetImpl$nonInitialLoad$2;
+
+    sget-object p2, LM0/r;->a:LM0/r;
+
+    invoke-virtual {p1, p2}, Landroidx/room/paging/CommonLimitOffsetImpl$nonInitialLoad$2;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 4
+
+    sget-object v0, LS0/a;->c:LS0/a;
+
+    iget v1, p0, Landroidx/room/paging/CommonLimitOffsetImpl$nonInitialLoad$2;->label:I
+
+    const/4 v2, 0x1
+
+    if-eqz v1, :cond_1
+
+    if-ne v1, v2, :cond_0
+
+    invoke-static {p1}, La/a;->L(Ljava/lang/Object;)V
+
+    goto :goto_0
+
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    :cond_1
+    invoke-static {p1}, La/a;->L(Ljava/lang/Object;)V
+
+    iget-object p1, p0, Landroidx/room/paging/CommonLimitOffsetImpl$nonInitialLoad$2;->this$0:Landroidx/room/paging/CommonLimitOffsetImpl;
+
+    invoke-static {p1}, Landroidx/room/paging/CommonLimitOffsetImpl;->access$getDb$p(Landroidx/room/paging/CommonLimitOffsetImpl;)Landroidx/room/RoomDatabase;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroidx/room/RoomDatabase;->getInvalidationTracker()Landroidx/room/InvalidationTracker;
+
+    move-result-object p1
+
+    iget-object v1, p0, Landroidx/room/paging/CommonLimitOffsetImpl$nonInitialLoad$2;->this$0:Landroidx/room/paging/CommonLimitOffsetImpl;
+
+    invoke-static {v1}, Landroidx/room/paging/CommonLimitOffsetImpl;->access$getTables$p(Landroidx/room/paging/CommonLimitOffsetImpl;)[Ljava/lang/String;
+
+    move-result-object v1
+
+    array-length v3, v1
+
+    invoke-static {v1, v3}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, [Ljava/lang/String;
+
+    iput v2, p0, Landroidx/room/paging/CommonLimitOffsetImpl$nonInitialLoad$2;->label:I
+
+    invoke-virtual {p1, v1, p0}, Landroidx/room/InvalidationTracker;->refresh([Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    if-ne p1, v0, :cond_2
+
+    return-object v0
+
+    :cond_2
+    :goto_0
+    check-cast p1, Ljava/lang/Boolean;
+
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_3
+
+    iget-object p1, p0, Landroidx/room/paging/CommonLimitOffsetImpl$nonInitialLoad$2;->this$0:Landroidx/room/paging/CommonLimitOffsetImpl;
+
+    invoke-static {p1}, Landroidx/room/paging/CommonLimitOffsetImpl;->access$getPagingSource$p(Landroidx/room/paging/CommonLimitOffsetImpl;)Landroidx/room/paging/LimitOffsetPagingSource;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroidx/paging/PagingSource;->invalidate()V
+
+    :cond_3
+    sget-object p1, LM0/r;->a:LM0/r;
+
+    return-object p1
+.end method

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.appmysite.baselibrary.titlebar.AMSTitleBar android:id="@id/title_bar_sort" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_feature" android:paddingTop="20.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_marginBottom="20.0dip" android:layout_below="@id/title_bar_sort">
+        <LinearLayout android:gravity="start|center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="60.0">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/txt_feat" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/featured" android:fontFamily="@font/outfit_regular" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffa1a1a1" android:id="@id/txt_sub_feat" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="selected" android:fontFamily="@font/outfit_regular" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="20.0dip" android:layout_height="fill_parent">
+            <ImageView android:layout_width="15.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_next" android:layout_marginEnd="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_latest" android:paddingTop="20.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_marginBottom="15.0dip" android:layout_below="@id/layout_feature">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="60.0">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/txt_latest" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Latest" android:fontFamily="@font/outfit_regular" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffa1a1a1" android:id="@id/txt_sub_latest" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="selected" android:fontFamily="@font/outfit_regular" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="20.0dip" android:layout_height="fill_parent">
+            <ImageView android:layout_width="15.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_next" android:layout_marginEnd="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_oldest" android:paddingTop="20.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_marginBottom="15.0dip" android:layout_below="@id/layout_latest">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="60.0">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/txt_oldest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Oldest" android:fontFamily="@font/outfit_regular" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffa1a1a1" android:id="@id/txt_sub_oldest" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="selected" android:fontFamily="@font/outfit_regular" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="20.0dip" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip">
+            <ImageView android:layout_width="15.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_next" android:layout_marginEnd="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

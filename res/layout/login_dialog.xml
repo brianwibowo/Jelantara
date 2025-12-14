@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sign in to access this site" />
+        <TextView android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Authorization required " />
+        <TextView android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="UserName" />
+        <EditText android:id="@id/editText" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Enter the text here" />
+        <TextView android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Password" />
+        <EditText android:id="@id/editPwd" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Enter the text here" android:inputType="textPassword" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

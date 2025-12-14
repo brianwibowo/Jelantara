@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/refresh" android:title="@string/refresh" />
+    <item android:id="@id/link" android:title="@string/web_copy" />
+    <item android:id="@id/share" android:title="@string/web_share" />
+    <item android:id="@id/browser" android:title="@string/web_open" />
+    <item android:id="@id/cache1" android:title="@string/purge_cache" />
+</menu>

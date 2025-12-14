@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.appmysite.baselibrary.titlebar.AMSTitleBar android:id="@id/ams_title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.cardview.widget.CardView android:layout_gravity="end" android:id="@id/cv_cancel" android:layout_width="33.299988dip" android:layout_height="33.299988dip" android:layout_marginTop="27.299988dip" android:layout_marginEnd="20.0dip" app:cardBackgroundColor="@color/light_grey" app:cardCornerRadius="50.0dip" app:cardElevation="0.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/ams_title_bar">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cancel" />
+    </androidx.cardview.widget.CardView>
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/rv_all_product_images" app:layout_constraintTop_toBottomOf="@id/cv_cancel" />
+    <com.google.android.material.tabs.TabLayout android:id="@id/tab_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:tabBackground="@drawable/gallery_selector" app:tabGravity="center" app:tabIndicatorHeight="0.0dip" app:tabPaddingEnd="5.0dip" app:tabPaddingStart="5.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_all_product_images" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" android:layout_marginBottom="41.0dip" android:layout_marginStart="16.0dip" app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

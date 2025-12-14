@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/relative_button" android:background="@drawable/button_round" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.appmysite.baselibrary.composeview.AmsComposeView android:id="@id/composeViewButton" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_button" android:background="@drawable/button_round" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:id="@id/btn_View" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Button" />
+    </LinearLayout>
+</RelativeLayout>

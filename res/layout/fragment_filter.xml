@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.appmysite.baselibrary.titlebar.AMSTitleBar android:id="@id/title_bar_filter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <com.appmysite.baselibrary.posts.AMSFilterComposeView android:id="@id/category_items" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_bar_filter" />
+</RelativeLayout>

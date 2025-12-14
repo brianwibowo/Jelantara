@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/relative_toolbar" android:layout_width="fill_parent" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.appmysite.baselibrary.composeview.AmsComposeView android:id="@id/relativeComposeView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/ams_status" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/relativeFragment" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="0.0dip" android:layout_below="@id/ams_status">
+        <LinearLayout android:orientation="horizontal" android:id="@id/relateClick" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true">
+            <RelativeLayout android:id="@id/relateBack" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="fill_parent" android:layout_marginStart="15.0dip">
+                <ImageView android:id="@id/imageBack" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerInParent="true" android:contentDescription="@null" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/relateHamburger" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="fill_parent" android:layout_marginStart="15.0dip">
+                <ImageView android:id="@id/imageHamburger" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerInParent="true" android:contentDescription="@null" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/relateCross" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="fill_parent" android:layout_marginStart="15.0dip">
+                <ImageView android:id="@id/imageCross" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_cross" android:layout_centerInParent="true" android:contentDescription="@null" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/relateFrontArrowback" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="fill_parent" android:layout_marginStart="16.0dip">
+                <ImageView android:id="@id/imageFrontBackButton" android:layout_width="10.0dip" android:layout_height="16.0dip" android:src="@drawable/ic_backforward" android:layout_centerInParent="true" android:alpha="0.4" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/toolBarLinearHeading" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="14.0dip" android:layout_marginEnd="10.0dip" android:layout_toStartOf="@id/relateoptions" android:layout_toEndOf="@id/relateClick">
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff333333" android:ellipsize="end" android:id="@id/toolBarHeading" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" android:lineSpacingExtra="7.6999817dip" />
+            <TextView android:textSize="13.0sp" android:textStyle="normal" android:textColor="#ff333333" android:ellipsize="end" android:id="@id/toolBarHeading2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" android:lineSpacingExtra="7.6999817dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/relateoptions" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginEnd="24.0dip" android:layout_alignParentEnd="true">
+            <LinearLayout android:layout_gravity="center" android:id="@id/relate_backforward" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_gravity="center" android:id="@id/relate_arrowback" android:layout_width="10.0dip" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="36.0dip">
+                    <ImageView android:id="@id/imageBackButton" android:layout_width="10.0dip" android:layout_height="16.0dip" android:src="@drawable/ic_backforward" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:alpha="0.4" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/relate_arrowforward" android:layout_width="10.0dip" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                    <ImageView android:id="@id/imageforwardButton" android:layout_width="10.0dip" android:layout_height="16.0dip" android:src="@drawable/ic_forward" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:alpha="0.4" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@id/relateOffline" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="28.0dip">
+                <ImageView android:id="@id/img_offline" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_offline" android:layout_centerInParent="true" android:contentDescription="@null" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/relateOptions" android:layout_width="10.0dip" android:layout_height="fill_parent" android:layout_marginStart="28.0dip">
+                <ImageView android:id="@id/imageElipse" android:visibility="visible" android:layout_width="5.0dip" android:layout_height="19.0dip" android:src="@drawable/ic_elipse" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:id="@id/viewProfile" android:background="#ffe4e4e4" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/bottomFragment" android:background="@color/teal_200" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/relativeFragment" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/tv_free_plan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/free_plan" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

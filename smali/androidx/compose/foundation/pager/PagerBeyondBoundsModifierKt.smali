@@ -1,0 +1,124 @@
+.class public final Landroidx/compose/foundation/pager/PagerBeyondBoundsModifierKt;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0016\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\u001a\u001d\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0001\u00a2\u0006\u0002\u0010\u0006\u00a8\u0006\u0007"
+    }
+    d2 = {
+        "rememberPagerBeyondBoundsState",
+        "Landroidx/compose/foundation/lazy/layout/LazyLayoutBeyondBoundsState;",
+        "state",
+        "Landroidx/compose/foundation/pager/PagerState;",
+        "beyondBoundsPageCount",
+        "",
+        "(Landroidx/compose/foundation/pager/PagerState;ILandroidx/compose/runtime/Composer;I)Landroidx/compose/foundation/lazy/layout/LazyLayoutBeyondBoundsState;",
+        "foundation_release"
+    }
+    k = 0x2
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+.annotation build Lkotlin/jvm/internal/SourceDebugExtension;
+.end annotation
+
+
+# direct methods
+.method public static final rememberPagerBeyondBoundsState(Landroidx/compose/foundation/pager/PagerState;ILandroidx/compose/runtime/Composer;I)Landroidx/compose/foundation/lazy/layout/LazyLayoutBeyondBoundsState;
+    .locals 3
+    .param p0    # Landroidx/compose/foundation/pager/PagerState;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p2    # Landroidx/compose/runtime/Composer;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+    .annotation build Landroidx/compose/runtime/Composable;
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    const v0, 0x16440bee
+
+    invoke-interface {p2, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    const/4 v1, -0x1
+
+    const-string v2, "androidx.compose.foundation.pager.rememberPagerBeyondBoundsState (PagerBeyondBoundsModifier.kt:27)"
+
+    invoke-static {v0, p3, v1, v2}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+
+    :cond_0
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p3
+
+    const v0, 0x1e7b2b64
+
+    invoke-interface {p2, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+
+    invoke-interface {p2, p0}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    invoke-interface {p2, p3}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+
+    move-result p3
+
+    or-int/2addr p3, v0
+
+    invoke-interface {p2}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-nez p3, :cond_1
+
+    sget-object p3, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
+
+    invoke-virtual {p3}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
+
+    move-result-object p3
+
+    if-ne v0, p3, :cond_2
+
+    :cond_1
+    new-instance v0, Landroidx/compose/foundation/pager/PagerBeyondBoundsState;
+
+    invoke-direct {v0, p0, p1}, Landroidx/compose/foundation/pager/PagerBeyondBoundsState;-><init>(Landroidx/compose/foundation/pager/PagerState;I)V
+
+    invoke-interface {p2, v0}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
+
+    :cond_2
+    invoke-interface {p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
+
+    check-cast v0, Landroidx/compose/foundation/pager/PagerBeyondBoundsState;
+
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_3
+
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
+
+    :cond_3
+    invoke-interface {p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
+
+    return-object v0
+.end method

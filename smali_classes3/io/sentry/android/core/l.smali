@@ -1,0 +1,102 @@
+.class public final synthetic Lio/sentry/android/core/l;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic c:I
+
+.field public final synthetic d:J
+
+.field public final synthetic e:Ljava/lang/Object;
+
+.field public final synthetic f:Ljava/lang/Object;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lio/sentry/android/core/AppComponentsBreadcrumbsIntegration;JLandroid/content/res/Configuration;)V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    iput v0, p0, Lio/sentry/android/core/l;->c:I
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lio/sentry/android/core/l;->e:Ljava/lang/Object;
+
+    iput-wide p2, p0, Lio/sentry/android/core/l;->d:J
+
+    iput-object p4, p0, Lio/sentry/android/core/l;->f:Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lio/sentry/android/replay/capture/BufferCaptureStrategy;Lkotlin/jvm/functions/Function2;J)V
+    .locals 1
+
+    .line 2
+    const/4 v0, 0x1
+
+    iput v0, p0, Lio/sentry/android/core/l;->c:I
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lio/sentry/android/core/l;->e:Ljava/lang/Object;
+
+    iput-object p2, p0, Lio/sentry/android/core/l;->f:Ljava/lang/Object;
+
+    iput-wide p3, p0, Lio/sentry/android/core/l;->d:J
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 4
+
+    iget v0, p0, Lio/sentry/android/core/l;->c:I
+
+    packed-switch v0, :pswitch_data_0
+
+    iget-wide v0, p0, Lio/sentry/android/core/l;->d:J
+
+    iget-object v2, p0, Lio/sentry/android/core/l;->e:Ljava/lang/Object;
+
+    check-cast v2, Lio/sentry/android/replay/capture/BufferCaptureStrategy;
+
+    iget-object v3, p0, Lio/sentry/android/core/l;->f:Ljava/lang/Object;
+
+    check-cast v3, Lkotlin/jvm/functions/Function2;
+
+    invoke-static {v2, v3, v0, v1}, Lio/sentry/android/replay/capture/BufferCaptureStrategy;->a(Lio/sentry/android/replay/capture/BufferCaptureStrategy;Lkotlin/jvm/functions/Function2;J)V
+
+    return-void
+
+    :pswitch_0
+    iget-object v0, p0, Lio/sentry/android/core/l;->f:Ljava/lang/Object;
+
+    check-cast v0, Landroid/content/res/Configuration;
+
+    iget-object v1, p0, Lio/sentry/android/core/l;->e:Ljava/lang/Object;
+
+    check-cast v1, Lio/sentry/android/core/AppComponentsBreadcrumbsIntegration;
+
+    iget-wide v2, p0, Lio/sentry/android/core/l;->d:J
+
+    invoke-static {v1, v2, v3, v0}, Lio/sentry/android/core/AppComponentsBreadcrumbsIntegration;->a(Lio/sentry/android/core/AppComponentsBreadcrumbsIntegration;JLandroid/content/res/Configuration;)V
+
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method

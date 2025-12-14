@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root_view" android:background="@drawable/all_apps_list_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:layout_marginHorizontal="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/img_logo" android:layout_width="80.0sp" android:layout_height="80.0sp" android:layout_margin="14.0sp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:gravity="start" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="14.0sp" app:layout_constraintEnd_toStartOf="@id/img_logo" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/img_logo">
+        <TextView android:textSize="16.0sp" android:textColor="#ff1b2952" android:ellipsize="end" android:id="@id/txt_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AppMySite" android:singleLine="true" android:layout_marginEnd="10.0sp" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff7782a1" android:id="@id/txt_app_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0sp" android:text="ID: 029471" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff7782a1" android:id="@id/txt_technology" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0sp" android:text="WordPress App" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,76 @@
+.class public final Lio/sentry/JavaMemoryCollector;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lio/sentry/IPerformanceSnapshotCollector;
+
+
+# annotations
+.annotation build Lorg/jetbrains/annotations/ApiStatus$Internal;
+.end annotation
+
+
+# instance fields
+.field private final runtime:Ljava/lang/Runtime;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lio/sentry/JavaMemoryCollector;->runtime:Ljava/lang/Runtime;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public collect(Lio/sentry/PerformanceCollectionData;)V
+    .locals 4
+    .param p1    # Lio/sentry/PerformanceCollectionData;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    iget-object v0, p0, Lio/sentry/JavaMemoryCollector;->runtime:Ljava/lang/Runtime;
+
+    invoke-virtual {v0}, Ljava/lang/Runtime;->totalMemory()J
+
+    move-result-wide v0
+
+    iget-object v2, p0, Lio/sentry/JavaMemoryCollector;->runtime:Ljava/lang/Runtime;
+
+    invoke-virtual {v2}, Ljava/lang/Runtime;->freeMemory()J
+
+    move-result-wide v2
+
+    sub-long/2addr v0, v2
+
+    new-instance v2, Lio/sentry/MemoryCollectionData;
+
+    new-instance v3, Lio/sentry/SentryNanotimeDate;
+
+    invoke-direct {v3}, Lio/sentry/SentryNanotimeDate;-><init>()V
+
+    invoke-direct {v2, v0, v1, v3}, Lio/sentry/MemoryCollectionData;-><init>(JLio/sentry/SentryDate;)V
+
+    invoke-virtual {p1, v2}, Lio/sentry/PerformanceCollectionData;->addMemoryData(Lio/sentry/MemoryCollectionData;)V
+
+    return-void
+.end method
+
+.method public setup()V
+    .locals 0
+
+    return-void
+.end method

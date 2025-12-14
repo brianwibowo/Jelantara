@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.appmysite.baselibrary.titlebar.AMSTitleBar android:id="@id/language_title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <androidx.compose.ui.platform.ComposeView android:id="@id/compose_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/language_title_bar" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/white_nine" android:gravity="center" android:id="@id/tv_version_name" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

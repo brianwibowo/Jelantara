@@ -1,0 +1,322 @@
+.class final Landroidx/compose/foundation/gestures/TransformableStateKt$animateZoomBy$3;
+.super LT0/g;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/compose/foundation/gestures/TransformableStateKt;->animateZoomBy(Landroidx/compose/foundation/gestures/TransformableState;FLandroidx/compose/animation/core/AnimationSpec;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "LT0/g;",
+        "Lkotlin/jvm/functions/Function2<",
+        "Landroidx/compose/foundation/gestures/TransformScope;",
+        "Lkotlin/coroutines/Continuation<",
+        "-",
+        "LM0/r;",
+        ">;",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
+    }
+    d2 = {
+        "Landroidx/compose/foundation/gestures/TransformScope;",
+        "LM0/r;",
+        "<anonymous>",
+        "(Landroidx/compose/foundation/gestures/TransformScope;)V"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+.end annotation
+
+.annotation runtime Lkotlin/coroutines/jvm/internal/DebugMetadata;
+    c = "androidx.compose.foundation.gestures.TransformableStateKt$animateZoomBy$3"
+    f = "TransformableState.kt"
+    l = {
+        0x8a
+    }
+    m = "invokeSuspend"
+.end annotation
+
+
+# instance fields
+.field final synthetic $animationSpec:Landroidx/compose/animation/core/AnimationSpec;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/compose/animation/core/AnimationSpec<",
+            "Ljava/lang/Float;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field final synthetic $previous:Lkotlin/jvm/internal/C;
+
+.field final synthetic $zoomFactor:F
+
+.field private synthetic L$0:Ljava/lang/Object;
+
+.field label:I
+
+
+# direct methods
+.method public constructor <init>(Lkotlin/jvm/internal/C;FLandroidx/compose/animation/core/AnimationSpec;Lkotlin/coroutines/Continuation;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/internal/C;",
+            "F",
+            "Landroidx/compose/animation/core/AnimationSpec<",
+            "Ljava/lang/Float;",
+            ">;",
+            "Lkotlin/coroutines/Continuation<",
+            "-",
+            "Landroidx/compose/foundation/gestures/TransformableStateKt$animateZoomBy$3;",
+            ">;)V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/TransformableStateKt$animateZoomBy$3;->$previous:Lkotlin/jvm/internal/C;
+
+    iput p2, p0, Landroidx/compose/foundation/gestures/TransformableStateKt$animateZoomBy$3;->$zoomFactor:F
+
+    iput-object p3, p0, Landroidx/compose/foundation/gestures/TransformableStateKt$animateZoomBy$3;->$animationSpec:Landroidx/compose/animation/core/AnimationSpec;
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1, p4}, LT0/g;-><init>(ILkotlin/coroutines/Continuation;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+    .locals 4
+    .param p1    # Ljava/lang/Object;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+    .param p2    # Lkotlin/coroutines/Continuation;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Lkotlin/coroutines/Continuation<",
+            "*>;)",
+            "Lkotlin/coroutines/Continuation<",
+            "LM0/r;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    new-instance v0, Landroidx/compose/foundation/gestures/TransformableStateKt$animateZoomBy$3;
+
+    iget-object v1, p0, Landroidx/compose/foundation/gestures/TransformableStateKt$animateZoomBy$3;->$previous:Lkotlin/jvm/internal/C;
+
+    iget v2, p0, Landroidx/compose/foundation/gestures/TransformableStateKt$animateZoomBy$3;->$zoomFactor:F
+
+    iget-object v3, p0, Landroidx/compose/foundation/gestures/TransformableStateKt$animateZoomBy$3;->$animationSpec:Landroidx/compose/animation/core/AnimationSpec;
+
+    invoke-direct {v0, v1, v2, v3, p2}, Landroidx/compose/foundation/gestures/TransformableStateKt$animateZoomBy$3;-><init>(Lkotlin/jvm/internal/C;FLandroidx/compose/animation/core/AnimationSpec;Lkotlin/coroutines/Continuation;)V
+
+    iput-object p1, v0, Landroidx/compose/foundation/gestures/TransformableStateKt$animateZoomBy$3;->L$0:Ljava/lang/Object;
+
+    return-object v0
+.end method
+
+.method public final invoke(Landroidx/compose/foundation/gestures/TransformScope;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    .locals 0
+    .param p1    # Landroidx/compose/foundation/gestures/TransformScope;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p2    # Lkotlin/coroutines/Continuation;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose/foundation/gestures/TransformScope;",
+            "Lkotlin/coroutines/Continuation<",
+            "-",
+            "LM0/r;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/gestures/TransformableStateKt$animateZoomBy$3;->create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+
+    move-result-object p1
+
+    check-cast p1, Landroidx/compose/foundation/gestures/TransformableStateKt$animateZoomBy$3;
+
+    sget-object p2, LM0/r;->a:LM0/r;
+
+    invoke-virtual {p1, p2}, Landroidx/compose/foundation/gestures/TransformableStateKt$animateZoomBy$3;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 2
+    check-cast p1, Landroidx/compose/foundation/gestures/TransformScope;
+
+    check-cast p2, Lkotlin/coroutines/Continuation;
+
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/gestures/TransformableStateKt$animateZoomBy$3;->invoke(Landroidx/compose/foundation/gestures/TransformScope;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 19
+    .param p1    # Ljava/lang/Object;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    move-object/from16 v8, p0
+
+    sget-object v9, LS0/a;->c:LS0/a;
+
+    iget v0, v8, Landroidx/compose/foundation/gestures/TransformableStateKt$animateZoomBy$3;->label:I
+
+    const/4 v1, 0x1
+
+    if-eqz v0, :cond_1
+
+    if-ne v0, v1, :cond_0
+
+    invoke-static/range {p1 .. p1}, La/a;->L(Ljava/lang/Object;)V
+
+    goto :goto_0
+
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    const-string v1, "call to \'resume\' before \'invoke\' with coroutine"
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_1
+    invoke-static/range {p1 .. p1}, La/a;->L(Ljava/lang/Object;)V
+
+    iget-object v0, v8, Landroidx/compose/foundation/gestures/TransformableStateKt$animateZoomBy$3;->L$0:Ljava/lang/Object;
+
+    check-cast v0, Landroidx/compose/foundation/gestures/TransformScope;
+
+    iget-object v2, v8, Landroidx/compose/foundation/gestures/TransformableStateKt$animateZoomBy$3;->$previous:Lkotlin/jvm/internal/C;
+
+    iget v10, v2, Lkotlin/jvm/internal/C;->c:F
+
+    const/16 v17, 0x1e
+
+    const/16 v18, 0x0
+
+    const/4 v11, 0x0
+
+    const-wide/16 v12, 0x0
+
+    const-wide/16 v14, 0x0
+
+    const/16 v16, 0x0
+
+    invoke-static/range {v10 .. v18}, Landroidx/compose/animation/core/AnimationStateKt;->AnimationState$default(FFJJZILjava/lang/Object;)Landroidx/compose/animation/core/AnimationState;
+
+    move-result-object v2
+
+    iget v3, v8, Landroidx/compose/foundation/gestures/TransformableStateKt$animateZoomBy$3;->$zoomFactor:F
+
+    new-instance v4, Ljava/lang/Float;
+
+    invoke-direct {v4, v3}, Ljava/lang/Float;-><init>(F)V
+
+    iget-object v3, v8, Landroidx/compose/foundation/gestures/TransformableStateKt$animateZoomBy$3;->$animationSpec:Landroidx/compose/animation/core/AnimationSpec;
+
+    new-instance v5, Landroidx/compose/foundation/gestures/TransformableStateKt$animateZoomBy$3$1;
+
+    iget-object v6, v8, Landroidx/compose/foundation/gestures/TransformableStateKt$animateZoomBy$3;->$previous:Lkotlin/jvm/internal/C;
+
+    invoke-direct {v5, v6, v0}, Landroidx/compose/foundation/gestures/TransformableStateKt$animateZoomBy$3$1;-><init>(Lkotlin/jvm/internal/C;Landroidx/compose/foundation/gestures/TransformScope;)V
+
+    iput v1, v8, Landroidx/compose/foundation/gestures/TransformableStateKt$animateZoomBy$3;->label:I
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x4
+
+    const/4 v10, 0x0
+
+    move-object v0, v2
+
+    move-object v1, v4
+
+    move-object v2, v3
+
+    move v3, v6
+
+    move-object v4, v5
+
+    move-object/from16 v5, p0
+
+    move v6, v7
+
+    move-object v7, v10
+
+    invoke-static/range {v0 .. v7}, Landroidx/compose/animation/core/SuspendAnimationKt;->animateTo$default(Landroidx/compose/animation/core/AnimationState;Ljava/lang/Object;Landroidx/compose/animation/core/AnimationSpec;ZLkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-ne v0, v9, :cond_2
+
+    return-object v9
+
+    :cond_2
+    :goto_0
+    sget-object v0, LM0/r;->a:LM0/r;
+
+    return-object v0
+.end method

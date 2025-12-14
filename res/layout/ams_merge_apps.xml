@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/multisite_items_recycler" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip" android:layout_above="@id/btn_accept" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+        <com.appmysite.baselibrary.button.AMSButtonView android:textSize="14.0dip" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/btn_accept" android:background="@drawable/consent_button_background" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="40.0dip" android:text="@string/accept" android:layout_alignParentBottom="true" android:layout_marginStart="10.0dip" android:layout_marginEnd="12.0dip" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

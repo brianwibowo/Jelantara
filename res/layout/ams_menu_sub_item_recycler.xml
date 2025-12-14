@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rootMain" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/rootMenu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+        <ImageView android:id="@id/img_icon" android:visibility="gone" android:layout_width="22.0dip" android:layout_height="22.0dip" />
+        <LinearLayout android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="17.0sp" android:layout_toStartOf="@id/arrow_linear" android:layout_toEndOf="@id/img_icon">
+            <TextView android:textSize="16.0dip" android:id="@id/tv_menu_item_name" android:background="?selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Menu" android:layout_toStartOf="@id/arrow_linear" android:layout_toEndOf="@id/img_icon" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="end" android:orientation="vertical" android:id="@id/arrow_linear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true">
+            <ImageView android:layout_gravity="end" android:id="@id/dataItemdownArrow" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_down" android:layout_marginEnd="15.0dip" />
+            <ImageView android:layout_gravity="end" android:id="@id/dataItemupArrow" android:layout_width="15.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_menuup" android:layout_marginEnd="15.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/menu_sub_recycler" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

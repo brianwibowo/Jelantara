@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.appmysite.baselibrary.titlebar.AMSTitleBar android:id="@id/ams_title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <androidx.compose.ui.platform.ComposeView android:id="@id/compose_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/ams_title_bar" />
+    <ProgressBar android:id="@id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/custom_progress" android:layout_centerInParent="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/ams_title_bar">
+        <ImageView android:id="@id/iv_no_internet" android:visibility="gone" android:layout_width="180.0dip" android:layout_height="100.0dip" android:src="@drawable/img_no_internet" android:layout_centerInParent="true" android:contentDescription="@null" />
+    </RelativeLayout>
+</RelativeLayout>

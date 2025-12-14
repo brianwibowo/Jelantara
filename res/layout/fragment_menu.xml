@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.appmysite.baselibrary.sidemenu.AMSSideMenuView android:id="@id/sidemenuView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.appmysite.baselibrary.sidemenu.AMSNewSliderMenu android:id="@id/ams_new_side_menu" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.appmysite.baselibrary.sidemenu.AMSSubSideMenuView android:id="@id/ams_side_sub_menu" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

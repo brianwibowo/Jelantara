@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.appmysite.baselibrary.titlebar.AMSTitleBar android:id="@id/title_bar_swebview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipeRefresh" android:background="#fff7f9fe" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <WebView android:id="@id/fragmentwebView" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+            <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/custom_progress" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</merge>

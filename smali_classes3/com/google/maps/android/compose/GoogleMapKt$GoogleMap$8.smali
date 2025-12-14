@@ -1,0 +1,375 @@
+.class final Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;
+.super Lkotlin/jvm/internal/n;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/google/maps/android/compose/GoogleMapKt;->GoogleMap(Landroidx/compose/ui/Modifier;Lcom/google/maps/android/compose/CameraPositionState;Ljava/lang/String;Lkotlin/jvm/functions/Function0;Lcom/google/maps/android/compose/MapProperties;Lcom/google/android/gms/maps/LocationSource;Lcom/google/maps/android/compose/MapUiSettings;Lcom/google/maps/android/compose/IndoorStateChangeListener;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Landroidx/compose/foundation/layout/PaddingValues;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;III)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/n;",
+        "Lkotlin/jvm/functions/Function2<",
+        "Landroidx/compose/runtime/Composer;",
+        "Ljava/lang/Integer;",
+        "LM0/r;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    k = 0x3
+    mv = {
+        0x1,
+        0x7,
+        0x1
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field final synthetic $$changed:I
+
+.field final synthetic $$changed1:I
+
+.field final synthetic $$default:I
+
+.field final synthetic $cameraPositionState:Lcom/google/maps/android/compose/CameraPositionState;
+
+.field final synthetic $content:Lkotlin/jvm/functions/Function2;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function2<",
+            "Landroidx/compose/runtime/Composer;",
+            "Ljava/lang/Integer;",
+            "LM0/r;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field final synthetic $contentDescription:Ljava/lang/String;
+
+.field final synthetic $contentPadding:Landroidx/compose/foundation/layout/PaddingValues;
+
+.field final synthetic $googleMapOptionsFactory:Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function0<",
+            "Lcom/google/android/gms/maps/GoogleMapOptions;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field final synthetic $indoorStateChangeListener:Lcom/google/maps/android/compose/IndoorStateChangeListener;
+
+.field final synthetic $locationSource:Lcom/google/android/gms/maps/LocationSource;
+
+.field final synthetic $modifier:Landroidx/compose/ui/Modifier;
+
+.field final synthetic $onMapClick:Lkotlin/jvm/functions/Function1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function1<",
+            "Lcom/google/android/gms/maps/model/LatLng;",
+            "LM0/r;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field final synthetic $onMapLoaded:Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function0<",
+            "LM0/r;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field final synthetic $onMapLongClick:Lkotlin/jvm/functions/Function1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function1<",
+            "Lcom/google/android/gms/maps/model/LatLng;",
+            "LM0/r;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field final synthetic $onMyLocationButtonClick:Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function0<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field final synthetic $onMyLocationClick:Lkotlin/jvm/functions/Function1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function1<",
+            "Landroid/location/Location;",
+            "LM0/r;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field final synthetic $onPOIClick:Lkotlin/jvm/functions/Function1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function1<",
+            "Lcom/google/android/gms/maps/model/PointOfInterest;",
+            "LM0/r;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field final synthetic $properties:Lcom/google/maps/android/compose/MapProperties;
+
+.field final synthetic $uiSettings:Lcom/google/maps/android/compose/MapUiSettings;
+
+
+# direct methods
+.method public constructor <init>(Landroidx/compose/ui/Modifier;Lcom/google/maps/android/compose/CameraPositionState;Ljava/lang/String;Lkotlin/jvm/functions/Function0;Lcom/google/maps/android/compose/MapProperties;Lcom/google/android/gms/maps/LocationSource;Lcom/google/maps/android/compose/MapUiSettings;Lcom/google/maps/android/compose/IndoorStateChangeListener;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Landroidx/compose/foundation/layout/PaddingValues;Lkotlin/jvm/functions/Function2;III)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose/ui/Modifier;",
+            "Lcom/google/maps/android/compose/CameraPositionState;",
+            "Ljava/lang/String;",
+            "Lkotlin/jvm/functions/Function0<",
+            "Lcom/google/android/gms/maps/GoogleMapOptions;",
+            ">;",
+            "Lcom/google/maps/android/compose/MapProperties;",
+            "Lcom/google/android/gms/maps/LocationSource;",
+            "Lcom/google/maps/android/compose/MapUiSettings;",
+            "Lcom/google/maps/android/compose/IndoorStateChangeListener;",
+            "Lkotlin/jvm/functions/Function1<",
+            "-",
+            "Lcom/google/android/gms/maps/model/LatLng;",
+            "LM0/r;",
+            ">;",
+            "Lkotlin/jvm/functions/Function1<",
+            "-",
+            "Lcom/google/android/gms/maps/model/LatLng;",
+            "LM0/r;",
+            ">;",
+            "Lkotlin/jvm/functions/Function0<",
+            "LM0/r;",
+            ">;",
+            "Lkotlin/jvm/functions/Function0<",
+            "Ljava/lang/Boolean;",
+            ">;",
+            "Lkotlin/jvm/functions/Function1<",
+            "-",
+            "Landroid/location/Location;",
+            "LM0/r;",
+            ">;",
+            "Lkotlin/jvm/functions/Function1<",
+            "-",
+            "Lcom/google/android/gms/maps/model/PointOfInterest;",
+            "LM0/r;",
+            ">;",
+            "Landroidx/compose/foundation/layout/PaddingValues;",
+            "Lkotlin/jvm/functions/Function2<",
+            "-",
+            "Landroidx/compose/runtime/Composer;",
+            "-",
+            "Ljava/lang/Integer;",
+            "LM0/r;",
+            ">;III)V"
+        }
+    .end annotation
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    iput-object v1, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$modifier:Landroidx/compose/ui/Modifier;
+
+    move-object v1, p2
+
+    iput-object v1, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$cameraPositionState:Lcom/google/maps/android/compose/CameraPositionState;
+
+    move-object v1, p3
+
+    iput-object v1, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$contentDescription:Ljava/lang/String;
+
+    move-object v1, p4
+
+    iput-object v1, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$googleMapOptionsFactory:Lkotlin/jvm/functions/Function0;
+
+    move-object v1, p5
+
+    iput-object v1, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$properties:Lcom/google/maps/android/compose/MapProperties;
+
+    move-object v1, p6
+
+    iput-object v1, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$locationSource:Lcom/google/android/gms/maps/LocationSource;
+
+    move-object v1, p7
+
+    iput-object v1, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$uiSettings:Lcom/google/maps/android/compose/MapUiSettings;
+
+    move-object v1, p8
+
+    iput-object v1, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$indoorStateChangeListener:Lcom/google/maps/android/compose/IndoorStateChangeListener;
+
+    move-object v1, p9
+
+    iput-object v1, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$onMapClick:Lkotlin/jvm/functions/Function1;
+
+    move-object v1, p10
+
+    iput-object v1, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$onMapLongClick:Lkotlin/jvm/functions/Function1;
+
+    move-object v1, p11
+
+    iput-object v1, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$onMapLoaded:Lkotlin/jvm/functions/Function0;
+
+    move-object v1, p12
+
+    iput-object v1, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$onMyLocationButtonClick:Lkotlin/jvm/functions/Function0;
+
+    move-object v1, p13
+
+    iput-object v1, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$onMyLocationClick:Lkotlin/jvm/functions/Function1;
+
+    move-object/from16 v1, p14
+
+    iput-object v1, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$onPOIClick:Lkotlin/jvm/functions/Function1;
+
+    move-object/from16 v1, p15
+
+    iput-object v1, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$contentPadding:Landroidx/compose/foundation/layout/PaddingValues;
+
+    move-object/from16 v1, p16
+
+    iput-object v1, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$content:Lkotlin/jvm/functions/Function2;
+
+    move/from16 v1, p17
+
+    iput v1, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$$changed:I
+
+    move/from16 v1, p18
+
+    iput v1, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$$changed1:I
+
+    move/from16 v1, p19
+
+    iput v1, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$$default:I
+
+    const/4 v1, 0x2
+
+    invoke-direct {p0, v1}, Lkotlin/jvm/internal/n;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Landroidx/compose/runtime/Composer;
+
+    check-cast p2, Ljava/lang/Number;
+
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
+
+    move-result p2
+
+    invoke-virtual {p0, p1, p2}, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->invoke(Landroidx/compose/runtime/Composer;I)V
+
+    sget-object p1, LM0/r;->a:LM0/r;
+
+    return-object p1
+.end method
+
+.method public final invoke(Landroidx/compose/runtime/Composer;I)V
+    .locals 21
+    .param p1    # Landroidx/compose/runtime/Composer;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+
+    .line 2
+    move-object/from16 v0, p0
+
+    move-object/from16 v17, p1
+
+    iget-object v1, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$modifier:Landroidx/compose/ui/Modifier;
+
+    iget-object v2, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$cameraPositionState:Lcom/google/maps/android/compose/CameraPositionState;
+
+    iget-object v3, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$contentDescription:Ljava/lang/String;
+
+    iget-object v4, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$googleMapOptionsFactory:Lkotlin/jvm/functions/Function0;
+
+    iget-object v5, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$properties:Lcom/google/maps/android/compose/MapProperties;
+
+    iget-object v6, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$locationSource:Lcom/google/android/gms/maps/LocationSource;
+
+    iget-object v7, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$uiSettings:Lcom/google/maps/android/compose/MapUiSettings;
+
+    iget-object v8, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$indoorStateChangeListener:Lcom/google/maps/android/compose/IndoorStateChangeListener;
+
+    iget-object v9, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$onMapClick:Lkotlin/jvm/functions/Function1;
+
+    iget-object v10, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$onMapLongClick:Lkotlin/jvm/functions/Function1;
+
+    iget-object v11, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$onMapLoaded:Lkotlin/jvm/functions/Function0;
+
+    iget-object v12, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$onMyLocationButtonClick:Lkotlin/jvm/functions/Function0;
+
+    iget-object v13, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$onMyLocationClick:Lkotlin/jvm/functions/Function1;
+
+    iget-object v14, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$onPOIClick:Lkotlin/jvm/functions/Function1;
+
+    iget-object v15, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$contentPadding:Landroidx/compose/foundation/layout/PaddingValues;
+
+    move-object/from16 p1, v1
+
+    iget-object v1, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$content:Lkotlin/jvm/functions/Function2;
+
+    move-object/from16 v16, v1
+
+    iget v1, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$$changed:I
+
+    or-int/lit8 v18, v1, 0x1
+
+    iget v1, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$$changed1:I
+
+    move/from16 v19, v1
+
+    iget v1, v0, Lcom/google/maps/android/compose/GoogleMapKt$GoogleMap$8;->$$default:I
+
+    move/from16 v20, v1
+
+    move-object/from16 v1, p1
+
+    invoke-static/range {v1 .. v20}, Lcom/google/maps/android/compose/GoogleMapKt;->GoogleMap(Landroidx/compose/ui/Modifier;Lcom/google/maps/android/compose/CameraPositionState;Ljava/lang/String;Lkotlin/jvm/functions/Function0;Lcom/google/maps/android/compose/MapProperties;Lcom/google/android/gms/maps/LocationSource;Lcom/google/maps/android/compose/MapUiSettings;Lcom/google/maps/android/compose/IndoorStateChangeListener;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Landroidx/compose/foundation/layout/PaddingValues;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;III)V
+
+    return-void
+.end method

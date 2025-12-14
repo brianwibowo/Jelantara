@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.compose.ui.platform.ComposeView android:id="@id/dumy_compose_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.appmysite.baselibrary.review.AMSReviewView android:id="@id/ams_review_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

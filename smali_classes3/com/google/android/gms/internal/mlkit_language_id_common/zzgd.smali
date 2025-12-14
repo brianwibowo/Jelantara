@@ -1,0 +1,375 @@
+.class final Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/google/firebase/encoders/ObjectEncoder;
+
+
+# static fields
+.field static final zza:Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;
+
+.field private static final zzb:Lcom/google/firebase/encoders/FieldDescriptor;
+
+.field private static final zzc:Lcom/google/firebase/encoders/FieldDescriptor;
+
+.field private static final zzd:Lcom/google/firebase/encoders/FieldDescriptor;
+
+.field private static final zze:Lcom/google/firebase/encoders/FieldDescriptor;
+
+.field private static final zzf:Lcom/google/firebase/encoders/FieldDescriptor;
+
+.field private static final zzg:Lcom/google/firebase/encoders/FieldDescriptor;
+
+.field private static final zzh:Lcom/google/firebase/encoders/FieldDescriptor;
+
+.field private static final zzi:Lcom/google/firebase/encoders/FieldDescriptor;
+
+.field private static final zzj:Lcom/google/firebase/encoders/FieldDescriptor;
+
+.field private static final zzk:Lcom/google/firebase/encoders/FieldDescriptor;
+
+.field private static final zzl:Lcom/google/firebase/encoders/FieldDescriptor;
+
+.field private static final zzm:Lcom/google/firebase/encoders/FieldDescriptor;
+
+.field private static final zzn:Lcom/google/firebase/encoders/FieldDescriptor;
+
+.field private static final zzo:Lcom/google/firebase/encoders/FieldDescriptor;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;
+
+    invoke-direct {v0}, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;-><init>()V
+
+    sput-object v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;->zza:Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;
+
+    const-string v0, "appId"
+
+    invoke-static {v0}, Lcom/google/firebase/encoders/FieldDescriptor;->builder(Ljava/lang/String;)Lcom/google/firebase/encoders/FieldDescriptor$Builder;
+
+    move-result-object v0
+
+    const/4 v1, 0x1
+
+    invoke-static {v1, v0}, Lcom/appmysite/baselibrary/bottomsheet/a;->x(ILcom/google/firebase/encoders/FieldDescriptor$Builder;)Lcom/google/firebase/encoders/FieldDescriptor;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;->zzb:Lcom/google/firebase/encoders/FieldDescriptor;
+
+    const-string v0, "appVersion"
+
+    invoke-static {v0}, Lcom/google/firebase/encoders/FieldDescriptor;->builder(Ljava/lang/String;)Lcom/google/firebase/encoders/FieldDescriptor$Builder;
+
+    move-result-object v0
+
+    const/4 v1, 0x2
+
+    invoke-static {v1, v0}, Lcom/appmysite/baselibrary/bottomsheet/a;->x(ILcom/google/firebase/encoders/FieldDescriptor$Builder;)Lcom/google/firebase/encoders/FieldDescriptor;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;->zzc:Lcom/google/firebase/encoders/FieldDescriptor;
+
+    const-string v0, "firebaseProjectId"
+
+    invoke-static {v0}, Lcom/google/firebase/encoders/FieldDescriptor;->builder(Ljava/lang/String;)Lcom/google/firebase/encoders/FieldDescriptor$Builder;
+
+    move-result-object v0
+
+    const/4 v1, 0x3
+
+    invoke-static {v1, v0}, Lcom/appmysite/baselibrary/bottomsheet/a;->x(ILcom/google/firebase/encoders/FieldDescriptor$Builder;)Lcom/google/firebase/encoders/FieldDescriptor;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;->zzd:Lcom/google/firebase/encoders/FieldDescriptor;
+
+    const-string v0, "mlSdkVersion"
+
+    invoke-static {v0}, Lcom/google/firebase/encoders/FieldDescriptor;->builder(Ljava/lang/String;)Lcom/google/firebase/encoders/FieldDescriptor$Builder;
+
+    move-result-object v0
+
+    const/4 v1, 0x4
+
+    invoke-static {v1, v0}, Lcom/appmysite/baselibrary/bottomsheet/a;->x(ILcom/google/firebase/encoders/FieldDescriptor$Builder;)Lcom/google/firebase/encoders/FieldDescriptor;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;->zze:Lcom/google/firebase/encoders/FieldDescriptor;
+
+    const-string v0, "tfliteSchemaVersion"
+
+    invoke-static {v0}, Lcom/google/firebase/encoders/FieldDescriptor;->builder(Ljava/lang/String;)Lcom/google/firebase/encoders/FieldDescriptor$Builder;
+
+    move-result-object v0
+
+    const/4 v1, 0x5
+
+    invoke-static {v1, v0}, Lcom/appmysite/baselibrary/bottomsheet/a;->x(ILcom/google/firebase/encoders/FieldDescriptor$Builder;)Lcom/google/firebase/encoders/FieldDescriptor;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;->zzf:Lcom/google/firebase/encoders/FieldDescriptor;
+
+    const-string v0, "gcmSenderId"
+
+    invoke-static {v0}, Lcom/google/firebase/encoders/FieldDescriptor;->builder(Ljava/lang/String;)Lcom/google/firebase/encoders/FieldDescriptor$Builder;
+
+    move-result-object v0
+
+    const/4 v1, 0x6
+
+    invoke-static {v1, v0}, Lcom/appmysite/baselibrary/bottomsheet/a;->x(ILcom/google/firebase/encoders/FieldDescriptor$Builder;)Lcom/google/firebase/encoders/FieldDescriptor;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;->zzg:Lcom/google/firebase/encoders/FieldDescriptor;
+
+    const-string v0, "apiKey"
+
+    invoke-static {v0}, Lcom/google/firebase/encoders/FieldDescriptor;->builder(Ljava/lang/String;)Lcom/google/firebase/encoders/FieldDescriptor$Builder;
+
+    move-result-object v0
+
+    const/4 v1, 0x7
+
+    invoke-static {v1, v0}, Lcom/appmysite/baselibrary/bottomsheet/a;->x(ILcom/google/firebase/encoders/FieldDescriptor$Builder;)Lcom/google/firebase/encoders/FieldDescriptor;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;->zzh:Lcom/google/firebase/encoders/FieldDescriptor;
+
+    const-string v0, "languages"
+
+    invoke-static {v0}, Lcom/google/firebase/encoders/FieldDescriptor;->builder(Ljava/lang/String;)Lcom/google/firebase/encoders/FieldDescriptor$Builder;
+
+    move-result-object v0
+
+    const/16 v1, 0x8
+
+    invoke-static {v1, v0}, Lcom/appmysite/baselibrary/bottomsheet/a;->x(ILcom/google/firebase/encoders/FieldDescriptor$Builder;)Lcom/google/firebase/encoders/FieldDescriptor;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;->zzi:Lcom/google/firebase/encoders/FieldDescriptor;
+
+    const-string v0, "mlSdkInstanceId"
+
+    invoke-static {v0}, Lcom/google/firebase/encoders/FieldDescriptor;->builder(Ljava/lang/String;)Lcom/google/firebase/encoders/FieldDescriptor$Builder;
+
+    move-result-object v0
+
+    const/16 v1, 0x9
+
+    invoke-static {v1, v0}, Lcom/appmysite/baselibrary/bottomsheet/a;->x(ILcom/google/firebase/encoders/FieldDescriptor$Builder;)Lcom/google/firebase/encoders/FieldDescriptor;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;->zzj:Lcom/google/firebase/encoders/FieldDescriptor;
+
+    const-string v0, "isClearcutClient"
+
+    invoke-static {v0}, Lcom/google/firebase/encoders/FieldDescriptor;->builder(Ljava/lang/String;)Lcom/google/firebase/encoders/FieldDescriptor$Builder;
+
+    move-result-object v0
+
+    const/16 v1, 0xa
+
+    invoke-static {v1, v0}, Lcom/appmysite/baselibrary/bottomsheet/a;->x(ILcom/google/firebase/encoders/FieldDescriptor$Builder;)Lcom/google/firebase/encoders/FieldDescriptor;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;->zzk:Lcom/google/firebase/encoders/FieldDescriptor;
+
+    const-string v0, "isStandaloneMlkit"
+
+    invoke-static {v0}, Lcom/google/firebase/encoders/FieldDescriptor;->builder(Ljava/lang/String;)Lcom/google/firebase/encoders/FieldDescriptor$Builder;
+
+    move-result-object v0
+
+    const/16 v1, 0xb
+
+    invoke-static {v1, v0}, Lcom/appmysite/baselibrary/bottomsheet/a;->x(ILcom/google/firebase/encoders/FieldDescriptor$Builder;)Lcom/google/firebase/encoders/FieldDescriptor;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;->zzl:Lcom/google/firebase/encoders/FieldDescriptor;
+
+    const-string v0, "isJsonLogging"
+
+    invoke-static {v0}, Lcom/google/firebase/encoders/FieldDescriptor;->builder(Ljava/lang/String;)Lcom/google/firebase/encoders/FieldDescriptor$Builder;
+
+    move-result-object v0
+
+    const/16 v1, 0xc
+
+    invoke-static {v1, v0}, Lcom/appmysite/baselibrary/bottomsheet/a;->x(ILcom/google/firebase/encoders/FieldDescriptor$Builder;)Lcom/google/firebase/encoders/FieldDescriptor;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;->zzm:Lcom/google/firebase/encoders/FieldDescriptor;
+
+    const-string v0, "buildLevel"
+
+    invoke-static {v0}, Lcom/google/firebase/encoders/FieldDescriptor;->builder(Ljava/lang/String;)Lcom/google/firebase/encoders/FieldDescriptor$Builder;
+
+    move-result-object v0
+
+    const/16 v1, 0xd
+
+    invoke-static {v1, v0}, Lcom/appmysite/baselibrary/bottomsheet/a;->x(ILcom/google/firebase/encoders/FieldDescriptor$Builder;)Lcom/google/firebase/encoders/FieldDescriptor;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;->zzn:Lcom/google/firebase/encoders/FieldDescriptor;
+
+    const-string v0, "optionalModuleVersion"
+
+    invoke-static {v0}, Lcom/google/firebase/encoders/FieldDescriptor;->builder(Ljava/lang/String;)Lcom/google/firebase/encoders/FieldDescriptor$Builder;
+
+    move-result-object v0
+
+    const/16 v1, 0xe
+
+    invoke-static {v1, v0}, Lcom/appmysite/baselibrary/bottomsheet/a;->x(ILcom/google/firebase/encoders/FieldDescriptor$Builder;)Lcom/google/firebase/encoders/FieldDescriptor;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;->zzo:Lcom/google/firebase/encoders/FieldDescriptor;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final bridge synthetic encode(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    check-cast p1, Lcom/google/android/gms/internal/mlkit_language_id_common/zzke;
+
+    check-cast p2, Lcom/google/firebase/encoders/ObjectEncoderContext;
+
+    sget-object v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;->zzb:Lcom/google/firebase/encoders/FieldDescriptor;
+
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/mlkit_language_id_common/zzke;->zzg()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-interface {p2, v0, v1}, Lcom/google/firebase/encoders/ObjectEncoderContext;->add(Lcom/google/firebase/encoders/FieldDescriptor;Ljava/lang/Object;)Lcom/google/firebase/encoders/ObjectEncoderContext;
+
+    sget-object v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;->zzc:Lcom/google/firebase/encoders/FieldDescriptor;
+
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/mlkit_language_id_common/zzke;->zzh()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-interface {p2, v0, v1}, Lcom/google/firebase/encoders/ObjectEncoderContext;->add(Lcom/google/firebase/encoders/FieldDescriptor;Ljava/lang/Object;)Lcom/google/firebase/encoders/ObjectEncoderContext;
+
+    sget-object v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;->zzd:Lcom/google/firebase/encoders/FieldDescriptor;
+
+    const/4 v1, 0x0
+
+    invoke-interface {p2, v0, v1}, Lcom/google/firebase/encoders/ObjectEncoderContext;->add(Lcom/google/firebase/encoders/FieldDescriptor;Ljava/lang/Object;)Lcom/google/firebase/encoders/ObjectEncoderContext;
+
+    sget-object v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;->zze:Lcom/google/firebase/encoders/FieldDescriptor;
+
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/mlkit_language_id_common/zzke;->zzj()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-interface {p2, v0, v2}, Lcom/google/firebase/encoders/ObjectEncoderContext;->add(Lcom/google/firebase/encoders/FieldDescriptor;Ljava/lang/Object;)Lcom/google/firebase/encoders/ObjectEncoderContext;
+
+    sget-object v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;->zzf:Lcom/google/firebase/encoders/FieldDescriptor;
+
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/mlkit_language_id_common/zzke;->zzk()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-interface {p2, v0, v2}, Lcom/google/firebase/encoders/ObjectEncoderContext;->add(Lcom/google/firebase/encoders/FieldDescriptor;Ljava/lang/Object;)Lcom/google/firebase/encoders/ObjectEncoderContext;
+
+    sget-object v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;->zzg:Lcom/google/firebase/encoders/FieldDescriptor;
+
+    invoke-interface {p2, v0, v1}, Lcom/google/firebase/encoders/ObjectEncoderContext;->add(Lcom/google/firebase/encoders/FieldDescriptor;Ljava/lang/Object;)Lcom/google/firebase/encoders/ObjectEncoderContext;
+
+    sget-object v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;->zzh:Lcom/google/firebase/encoders/FieldDescriptor;
+
+    invoke-interface {p2, v0, v1}, Lcom/google/firebase/encoders/ObjectEncoderContext;->add(Lcom/google/firebase/encoders/FieldDescriptor;Ljava/lang/Object;)Lcom/google/firebase/encoders/ObjectEncoderContext;
+
+    sget-object v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;->zzi:Lcom/google/firebase/encoders/FieldDescriptor;
+
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/mlkit_language_id_common/zzke;->zza()Lcom/google/android/gms/internal/mlkit_language_id_common/zzu;
+
+    move-result-object v1
+
+    invoke-interface {p2, v0, v1}, Lcom/google/firebase/encoders/ObjectEncoderContext;->add(Lcom/google/firebase/encoders/FieldDescriptor;Ljava/lang/Object;)Lcom/google/firebase/encoders/ObjectEncoderContext;
+
+    sget-object v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;->zzj:Lcom/google/firebase/encoders/FieldDescriptor;
+
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/mlkit_language_id_common/zzke;->zzi()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-interface {p2, v0, v1}, Lcom/google/firebase/encoders/ObjectEncoderContext;->add(Lcom/google/firebase/encoders/FieldDescriptor;Ljava/lang/Object;)Lcom/google/firebase/encoders/ObjectEncoderContext;
+
+    sget-object v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;->zzk:Lcom/google/firebase/encoders/FieldDescriptor;
+
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/mlkit_language_id_common/zzke;->zzb()Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    invoke-interface {p2, v0, v1}, Lcom/google/firebase/encoders/ObjectEncoderContext;->add(Lcom/google/firebase/encoders/FieldDescriptor;Ljava/lang/Object;)Lcom/google/firebase/encoders/ObjectEncoderContext;
+
+    sget-object v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;->zzl:Lcom/google/firebase/encoders/FieldDescriptor;
+
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/mlkit_language_id_common/zzke;->zzd()Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    invoke-interface {p2, v0, v1}, Lcom/google/firebase/encoders/ObjectEncoderContext;->add(Lcom/google/firebase/encoders/FieldDescriptor;Ljava/lang/Object;)Lcom/google/firebase/encoders/ObjectEncoderContext;
+
+    sget-object v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;->zzm:Lcom/google/firebase/encoders/FieldDescriptor;
+
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/mlkit_language_id_common/zzke;->zzc()Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    invoke-interface {p2, v0, v1}, Lcom/google/firebase/encoders/ObjectEncoderContext;->add(Lcom/google/firebase/encoders/FieldDescriptor;Ljava/lang/Object;)Lcom/google/firebase/encoders/ObjectEncoderContext;
+
+    sget-object v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;->zzn:Lcom/google/firebase/encoders/FieldDescriptor;
+
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/mlkit_language_id_common/zzke;->zze()Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-interface {p2, v0, v1}, Lcom/google/firebase/encoders/ObjectEncoderContext;->add(Lcom/google/firebase/encoders/FieldDescriptor;Ljava/lang/Object;)Lcom/google/firebase/encoders/ObjectEncoderContext;
+
+    sget-object v0, Lcom/google/android/gms/internal/mlkit_language_id_common/zzgd;->zzo:Lcom/google/firebase/encoders/FieldDescriptor;
+
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/mlkit_language_id_common/zzke;->zzf()Ljava/lang/Integer;
+
+    move-result-object p1
+
+    invoke-interface {p2, v0, p1}, Lcom/google/firebase/encoders/ObjectEncoderContext;->add(Lcom/google/firebase/encoders/FieldDescriptor;Ljava/lang/Object;)Lcom/google/firebase/encoders/ObjectEncoderContext;
+
+    return-void
+.end method
